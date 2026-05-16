@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens — stored as space-separated RGB triplets so Tailwind can apply alpha */
+:root {
+  --bg-primary: 15 17 23;        /* #0f1117 */
+  --bg-secondary: 26 29 39;      /* #1a1d27 */
+  --bg-card: 30 33 48;           /* #1e2130 */
+  --border: 42 45 62;            /* #2a2d3e */
+  --text-primary: 232 234 240;   /* #e8eaf0 */
+  --text-secondary: 139 143 168; /* #8b8fa8 */
+  --accent: 108 99 255;          /* #6c63ff */
+  --accent-hover: 90 82 224;     /* #5a52e0 */
+  --success: 16 185 129;         /* #10b981 */
+  --warning: 245 158 11;         /* #f59e0b */
+  --danger: 239 68 68;           /* #ef4444 */
+  --low: 16 185 129;             /* #10b981 */
+  --medium: 245 158 11;          /* #f59e0b */
+  --high: 239 68 68;             /* #ef4444 */
+}
+
+/* Light mode overrides */
+.light {
+  --bg-primary: 245 246 250;     /* #f5f6fa */
+  --bg-secondary: 255 255 255;   /* #ffffff */
+  --bg-card: 255 255 255;        /* #ffffff */
+  --border: 226 228 238;         /* #e2e4ee */
+  --text-primary: 24 26 35;      /* #181a23 */
+  --text-secondary: 102 107 130; /* #666b82 */
+  --accent: 108 99 255;
+  --accent-hover: 90 82 224;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary font-body antialiased;
+    transition-property: background-color, color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-bg-primary;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--border));
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--text-secondary));
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-bg-card border border-border rounded-xl;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-medium
+           transition-colors duration-200 focus-visible:outline-none;
+  }
+
+  .btn-primary {
+    @apply btn bg-accent text-white hover:bg-accent-hover shadow-glow;
+  }
+
+  .btn-secondary {
+    @apply btn bg-bg-secondary text-text-primary border border-border hover:border-accent;
+  }
+
+  .btn-ghost {
+    @apply btn text-text-secondary hover:text-text-primary hover:bg-bg-secondary;
+  }
+
+  .input {
+    @apply w-full px-4 py-2.5 rounded-xl bg-bg-secondary border border-border
+           text-text-primary placeholder:text-text-secondary
+           focus:border-accent focus:ring-2 focus:ring-accent/30 focus:outline-none
+           transition-colors duration-200;
+  }
+
+  .select-trigger {
+    @apply inline-flex items-center gap-1.5 rounded-xl border border-border bg-bg-secondary
+           px-3 py-2.5 text-text-primary
+           focus:border-accent focus:ring-2 focus:ring-accent/30 focus:outline-none
+           transition-colors duration-200;
+  }
+
+  .priority-badge {
+    @apply inline-flex items-center text-xs font-medium px-2.5 py-0.5 rounded-full;
+  }
+}
