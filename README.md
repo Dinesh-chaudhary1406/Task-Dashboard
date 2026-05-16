@@ -2,7 +2,7 @@
 
 A responsive React task dashboard for creating, editing, filtering, and tracking tasks with persistent storage, list/card views, dark/light mode, and drag-and-drop reordering.
 
-Live demo: `https://task-dashboard-liart-nine.vercel.app/` 
+Live demo: https://task-dashboard-liart-nine.vercel.app/ 
 
 Repository: `https://github.com/Dinesh-chaudhary1406/Task-Dashboard.git` 
 ---
