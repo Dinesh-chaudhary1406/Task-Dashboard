@@ -1,11 +1,10 @@
-# TaskFlow — Task Management Dashboard
+ TaskFlow — Task Management Dashboard
 
 A responsive React task dashboard for creating, editing, filtering, and tracking tasks with persistent storage, list/card views, dark/light mode, and drag-and-drop reordering.
 
-**Live demo:** `https://YOUR-APP.vercel.app` ← replace after you deploy
+Live demo: `https://task-dashboard-liart-nine.vercel.app/` 
 
-**Repository:** `https://github.com/YOUR_USERNAME/task-dashboard` ← replace with your repo
-
+Repository: `https://github.com/Dinesh-chaudhary1406/Task-Dashboard.git` 
 ---
 
 ## Features
@@ -51,9 +50,8 @@ A responsive React task dashboard for creating, editing, filtering, and tracking
 
 ![Dashboard — light mode](./docs/screenshots/dashboard-light.png)
 
-> Replace images in `docs/screenshots/` if you retake screenshots after UI changes.
 
----
+
 
 ## Tech stack
 
@@ -76,7 +74,7 @@ A responsive React task dashboard for creating, editing, filtering, and tracking
 ### Install and run locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/task-dashboard.git
+git clone https://github.com/Dinesh-chaudhary1406/Task-Dashboard.git
 cd task-dashboard
 npm install
 npm run dev
@@ -84,7 +82,6 @@ npm run dev
 
 Open **http://localhost:5173/** in your browser.
 
-> Use the dev server URL. Do not open `index.html` directly from the file explorer.
 
 ### Other commands
 
@@ -97,32 +94,6 @@ npm run lint     # ESLint
 
 ---
 
-## Deployment
-
-This app is a static Vite build. Recommended hosts: **Vercel** or **Netlify**.
-
-### Vercel (recommended)
-
-1. Push this repo to a **public** GitHub repository.
-2. Go to [vercel.com](https://vercel.com) → **Add New Project** → import your repo.
-3. Use defaults:
-   - **Framework preset:** Vite
-   - **Build command:** `npm run build`
-   - **Output directory:** `dist`
-4. Deploy, then copy the URL (e.g. `https://task-dashboard-xyz.vercel.app`).
-5. Paste that URL at the top of this README under **Live demo**.
-
-### Netlify
-
-1. Import the GitHub repo at [netlify.com](https://www.netlify.com).
-2. Build command: `npm run build` · Publish directory: `dist`
-3. Add the live URL to this README.
-
-### GitHub Pages
-
-Requires setting `base` in `vite.config.ts` to your repo name. Vercel/Netlify are simpler for this project.
-
----
 
 ## Design decisions
 
@@ -156,20 +127,8 @@ src/
 npm test
 ```
 
-Covers task filtering/sorting, `useTasks` hook (CRUD + persistence), and `TaskCard` interactions.
 
----
-
-## Submission checklist
-
-- [ ] Code pushed to a **public** GitHub repository
-- [ ] README updated with your **GitHub repo link** and **live demo URL**
-- [ ] Screenshots added under `docs/screenshots/` (or confirm existing ones)
-- [ ] App deployed (Vercel / Netlify / GitHub Pages)
-- [ ] Repository link shared with the TA team within **48 hours**
-
----
 
 ## Author
 
-[Your Name] — [Your email or student ID if required]
+[Dinesh Chaudhary] — [devchaudhary5082@gmail.com]
