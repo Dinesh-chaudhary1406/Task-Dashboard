@@ -4,7 +4,7 @@ A responsive React task dashboard for creating, editing, filtering, and tracking
 
 Live demo: https://task-dashboard-liart-nine.vercel.app/ 
 
-Repository: `https://github.com/Dinesh-chaudhary1406/Task-Dashboard.git` 
+Repository: https://github.com/Dinesh-chaudhary1406/Task-Dashboard.git
 ---
 
 ## Features
